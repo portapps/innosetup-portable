@@ -1,5 +1,5 @@
 //go:generate go install -v github.com/josephspurrier/goversioninfo/cmd/goversioninfo
-//go:generate goversioninfo -icon=res/papp.ico
+//go:generate goversioninfo -icon=res/papp.ico -manifest=res/papp.manifest
 package main
 
 import (
@@ -24,6 +24,5 @@ func init() {
 
 func main() {
 	app.Process = utl.PathJoin(app.AppPath, "Compil32.exe")
-
 	app.Launch(os.Args[1:])
 }
