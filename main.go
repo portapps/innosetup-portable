@@ -25,5 +25,7 @@ func init() {
 
 func main() {
 	app.Process = utl.PathJoin(app.AppPath, "Compil32.exe")
+
+	defer app.Close()
 	app.Launch(os.Args[1:])
 }
