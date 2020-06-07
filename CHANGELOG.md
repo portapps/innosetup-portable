@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.0.5-4 (2020/06/07)
+
+* InnoSetup 6.0.5
+* Portapps 2.4.4
+
 ## 6.0.4-3 (2020/03/16)
 
 * InnoSetup 6.0.4
