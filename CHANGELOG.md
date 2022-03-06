@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.2.0-5 (2022/03/06)
+
+* InnoSetup 6.2.0
+* Portapps 3.4.0
+
 ## 6.1.2-4 (2020/11/16)
 
 * InnoSetup 6.1.2
