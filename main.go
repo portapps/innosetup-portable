@@ -1,13 +1,12 @@
 //go:generate go install -v github.com/josephspurrier/goversioninfo/cmd/goversioninfo
-//go:generate goversioninfo -icon=res/papp.ico -manifest=res/papp.manifest
 package main
 
 import (
 	"os"
+	"path/filepath"
 
 	"github.com/portapps/portapps/v3"
 	"github.com/portapps/portapps/v3/pkg/log"
-	"github.com/portapps/portapps/v3/pkg/utl"
 )
 
 var (
@@ -24,7 +23,7 @@ func init() {
 }
 
 func main() {
-	app.Process = utl.PathJoin(app.AppPath, "Compil32.exe")
+	app.Process = filepath.Join(app.AppPath, "Compil32.exe")
 
 	defer app.Close()
 	app.Launch(os.Args[1:])
