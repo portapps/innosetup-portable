@@ -5,6 +5,16 @@
 <property name="build.properties" value="${app.basedir}/build.properties"/>
 <property file="${build.properties}"/>
 
+<loadresource property="app.version.tag">
+  <string value="${app.version}"/>
+  <filterchain>
+    <tokenfilter>
+      <replacestring from="." to="_"/>
+    </tokenfilter>
+  </filterchain>
+</loadresource>
+<property name="atf.win32.url" value="https://github.com/jrsoftware/issrc/releases/download/is-${app.version.tag}/innosetup-${app.version}.exe"/>
+
 <!-- Load Portapps core build -->
 <property name="core.basedir" location="${app.basedir}\${core.dir}"/>
 <fail unless="core.basedir" message="Core directory '${core.basedir}' not found in ${core.basedir}"/>
