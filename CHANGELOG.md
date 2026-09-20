@@ -1,5 +1,11 @@
 # Changelog
 
+## 7.1.0-6 (2026/09/20)
+
+* InnoSetup 7.1.0
+* Portapps 3.19.0
+* Bump github.com/josephspurrier/goversioninfo from 1.5.0 to 1.7.0
+
 ## 6.2.0-5 (2022/03/06)
 
 * InnoSetup 6.2.0
